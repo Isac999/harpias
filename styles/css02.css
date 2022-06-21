@@ -1,0 +1,211 @@
+body {
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/f3/4b/2e/f34b2e941cafcd25ac6f34202f9840d9.jpg");
+    background-size: cover;
+    line-height: 2.0;
+    margin: 2%;
+    color: rgb(206, 123, 22);
+}
+header {
+    padding: 1%;
+    /*background-color: rgba(9, 10, 11, 0.663)*/;
+    border: none;
+    margin-left: -2%;
+    margin-right: -2%;
+}
+main {
+    margin-left: -2%;
+    margin-right: -2%;
+    border-radius: 4px;
+    padding: 2.5%;
+    padding-bottom: 0;
+} 
+#fundo-suave {
+    background-color: rgba(9, 10, 11, 0.829);
+    border-radius: 28px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 2%;
+}
+header h1 {
+    text-align: center;
+    color: #4AF57C;
+    text-shadow: 2.0px 2.0px rgba(0, 255, 21, 0.201);
+    font-weight: bolder;
+    font-size: 40px;
+    background-color: #0000009d;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #7ef58a17;
+    border-width: 3px;
+    box-sizing: border-box;
+}
+header h1:hover {
+    background-color: rgba(0, 0, 255, 0.377);
+}
+button#button-bar:hover {
+    background-color: rgba(0, 0, 255, 0.377);
+    cursor: pointer;
+}
+button#button-bar  {
+    width: 10%;
+    height: 28spx;
+    border-radius: 0px 12px 12px 0px;
+    border-style: outset;
+    border-left: none;
+    background-color: green;
+    border-color:rgba(0, 0, 255, 0.09);
+    font-size: 16px;
+    font-weight: bolder;
+}
+#bar {
+	display: flex;
+	justify-content: flex-end;
+}
+header #bar #input-bar {
+    width: 25%;
+    height: 28px;
+    border-radius: 12px 0px 0px 12px;
+    border-style: outset;
+    border-right: none;
+    border-color: rgba(0, 0, 255, 0.377);
+}
+#fieldset {
+    border-radius: 4px;
+    border-color: rgb(13, 163, 131);
+}
+#fieldset legend {
+    padding-bottom: 0px;
+    text-align: center;
+    font-weight: bolder;
+    color: #4AF57C;
+    background-color: #0000009e;
+    border-radius: 15px;
+    text-shadow: 1.2px 1.2px rgba(0, 255, 21, 0.201);
+    width: 75%;
+    height: 40%;
+}
+#fieldset legend:hover {
+    background-color: rgba(0, 0, 255, 0.377);
+}
+#fieldset legend h2 {
+    margin: 0px;
+}
+form {
+    font-size: 22px;
+    text-align: center;
+}
+form h3, #section01 label{
+    color: rgb(13, 163, 131);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+section {
+    padding: 10px;
+}
+#section01 input {
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(206, 123, 22);
+}
+#section02 input {
+    width: 5%;
+    height: 18px;
+    border-radius: 5px;
+    border-style: solid;
+}
+#section03 input {
+    width: 20px;
+    height: 25px;
+}
+#section04 select, #section05 select {
+    width: 25%;
+    height: 28px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(206, 123, 22);
+}
+#button-submit {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #22ec222e;
+    border-color:#f2f2f2;
+    border-radius: 5px;
+    border-style: solid;
+    color: white;
+    border-width: 1px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+}
+#button-submit:hover {
+    background-color: rgba(0, 0, 255, 0.377);
+    cursor: pointer;
+}
+#direitos-reservados {
+    color: white;
+}
+footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 4%;
+}
+.inline {
+    display: inline;
+}
+
+@media (max-width: 760px) {
+    #button-bar {
+        min-width: 20%;
+        font-size: 12px;
+    }
+    input[type="text"] {
+        width: 35%;
+    }
+}
+@media (max-width: 780px) {
+    .inline {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #idade, #status {
+        min-width: 50%;
+        min-height: 33px;
+    }
+    #email, #nome {
+        min-width: 50%;
+    }
+}
+@media (max-width: 520px) {
+    header h1 {
+        font-size: 35px;
+    }
+    #fieldset legend h2 {
+        font-size: 28px;
+    }
+}
+input {
+    color: black;
+    font-weight: bold;
+}
+@media (max-width: 580px) {
+    #section02 span {
+        font-size: 18px;
+    }
+    #section02 span label {
+        margin: 0;
+        padding: 0;
+    }
+    #section02 span input {
+    margin: 0;
+    padding: 0;
+}
+}

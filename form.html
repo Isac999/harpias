@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css02.css">
+    <link rel="shortcut icon" href="images/css-favicon.png" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <div id="fundo-suave">
+        <header>
+            <h1>PESQUISA DE CAMPO</h1>
+            <div id="bar">
+                <input type="text" id="input-bar">
+                <button id="button-bar">Buscar</button>
+            </div>
+        </header>
+        <main>
+            <fieldset id="fieldset">
+                <legend>
+                    <h2>Formulário</h2>
+                </legend>
+                <form action="./response.html" method="get">
+
+                    <section id="section01">
+                        <span>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                        </span> <br>
+                        <span>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" minlength="3" maxlength="35" required>
+                        </span>
+                    </section>
+
+                    <section id="section02">
+                        <h3>Selecione suas competências Plenas:</h3>
+                        <span>
+                            <input type="checkbox" id="javascript" name="javascript" value="1">
+                            <label for="javascript">JavaScript</label>
+                            
+                            <input type="checkbox" id="python" name="python" value="2">
+                            <label for="python">Python</label>
+                            
+                            <input type="checkbox" id="java" name="java" value="3">
+                            <label for="java">Java</label> 
+
+                        </span> <br>
+                        <span>
+                            <input type="checkbox" id="php" name="pdp" value="4">
+                            <label for="php">PHP</label>
+
+                            <input type="checkbox" id="ruby" name="ruby" value="5">
+                            <label for="ruby">Ruby</label>
+
+                            <input type="checkbox" id="html_css" name="html_css" value="6">
+                            <label for="html_css">HTML5 e CSS3</label>
+                        </span>
+                    </section>
+
+                    <section id="section03">
+                        <h3>Selecione o tamanho de sua camisa:</h3>        
+                        <span>
+                            <input type="radio" name="choice" id="PP" value="1">
+                            <label for="PP">PP</label>
+        
+                            <input type="radio" name="choice" id="P" value="2">
+                            <label for="P">P</label>
+        
+                            <input type="radio" name="choice" id="M" value="3">
+                            <label for="M">M</label>
+        
+                            <input type="radio" name="choice" id="G" value="4">
+                            <label for="G">G</label>
+                        </span> <br>
+                        <span>
+                            <input type="radio" name="choice" id="GG" value="5">
+                            <label for="GG">GG</label>
+        
+                            <input type="radio" name="choice" id="XG" value="6">
+                            <label for="XG">XG</label>
+        
+                            <input type="radio" name="choice" id="XL" value="7">
+                            <label for="XL">XL</label>
+        
+                            <input type="radio" name="choice" id="XXL" value="8">
+                            <label for="XXL">XXL</label>
+                        </span>
+                    </section>
+                    <br>
+                    <section id="section04">
+                        <h3 class="inline"> Selecione sua idade: </h3>
+                        <select name="idade" id="idade">
+                            <option value="0" selected>Selecione clicando aqui</option>
+                            <option value="1">Menos de 12 anos</option>
+                            <option value="2">De 12 aos 18 anos</option>
+                            <option value="3">De 19 aos 25 anos</option>
+                            <option value="4">De 26 aos 45 anos</option>
+                            <option value="5">De 46 aos 60 anos</option>
+                            <option value="6">Acima de 61 anos</option>
+                        </select>
+                    </section>
+                    <section id="section05">
+                        <h3 class="inline">Selecione seu estado civil:</h3>
+                        <select name="status" id="status">
+                            <option value="0">Selecione clicando aqui</option>
+                            <option value="1">Solteiro(a)</option>
+                            <option value="2">Casado(a)</option>
+                            <option value="3">Divorciado(a)</option>
+                            <option value="4">Viuvo(a)</option>
+                            <option value="5">Amigado(a)</option>
+                        </select>
+                    </section>
+                    <br>
+                    <section>
+                        <button id="button-submit"type="submit">Enviar</button>
+                    </section>
+                </form>
+            </fieldset>
+        </main>
+        <footer>
+            <span id="direitos-reservados">
+                Todos os direitos reservados®
+            </span>
+        </footer>
+    </div>
+</body>
+</html>
